@@ -1,0 +1,180 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Arial", sans-serif;
+
+  background-color: #ebe9ec;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.sticky-footer {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/*PAGE-HEADER*/
+
+
+.page-header {
+  background-color: #3d3d3f;
+}
+
+.page-header__inner {
+  max-width: 100vw;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .page-header__inner {
+    max-width: 1440px;
+  }
+}
+
+.page-header__container {
+  padding: 20px 15px;
+}
+
+.page-header__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.page-header__profession {
+  margin: 0;
+  color: #a09ea1;
+  font-size: 12px;
+}
+
+
+/*CONTACTS*/
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+
+.contacts__switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__toogle {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 30px 0 0;
+
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.contacts__toogle::after {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0 5px 0 0 #ffffff,
+    0 10px 0 0  #ffffff;
+}
+
+.contacts__toogle--nojs {
+  display: none;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #3d3d3f;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+}
+
+.contacts__list--closed {
+  display: none;
+}
+
+.contacts__list--nojs {
+  position: relative;
+  display: block;
+}
+
+.contacts__item {
+  box-shadow: inset 0 1px 0 #a09ea1;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #ffffff;
+  fill: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 15px;
+}
+
+.contacts__link-title {
+  margin: 0;
+}
+
+.contacts__link svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+main {
+  background-image: url('../img/photo.jpg');
+  background-size: cover;
+}
