@@ -38,6 +38,38 @@ img {
   overflow: hidden;
 }
 
+.page-title {
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.page-title--red {
+  background-color: #d3131e;
+  color: #ffffff;
+}
+
+.page-title--green {
+  color: #046866;
+  border-top: 1px solid #046866;
+  border-bottom: 1px solid #046866;
+}
+
+@media (min-width: 660px) {
+  .page-title {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-title {
+    font-size: 32px;
+  }
+}
+
 
 /*PAGE-HEADER*/
 
@@ -286,6 +318,8 @@ img {
 
 .photo {
   background-color: #3d3d3f;
+  box-shadow: 0 5px 5px -5px #000000;
+  margin-bottom: 15px;
 }
 
 .photo__inner {
@@ -311,3 +345,124 @@ img {
 
   border: 10px solid #ffffff;
 }
+
+
+/*SUMMARY*/
+
+
+.summary__inner {
+  padding: 15px;
+}
+
+.summary__desc,
+.summary__skills {
+  font-size: 16px;
+  margin: 0;
+  color: #414141;
+}
+
+.summary__desc {
+  margin-bottom: 10px;
+}
+
+.summary__skills-title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.summary__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.summary__item {
+  padding: 5px;
+  background-color: #adadad;
+  border-radius: 3px;
+  color: #000000;
+}
+
+
+/*EDUCATION*/
+
+
+.education {
+  background-color: #3d3d3f;
+  box-shadow: 0 5px 5px -5px #000000;
+  margin-bottom: 15px;
+}
+
+.education__inner {
+  padding: 15px;
+}
+
+.education__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.education__item {
+  margin-bottom: 10px;
+}
+
+.education__item:last-child {
+  margin-bottom: 0;
+}
+
+.education__desc {
+  color: #a09ea1;
+}
+
+.education__desc-title {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+/*PROJECTS*/
+
+
+.projects__inner {
+  position: relative;
+}
+
+.projects__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  height: 300px;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.projects__item {
+  position: absolute;
+  width: 100vw;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.projects__button {
+  position: absolute;
+  top: 50%;
+
+  z-index: 100;
+}
+
+.projects__button--left {
+  left: 20px;
+}
+
+.projects__button--right {
+  right: 20px;
+}
+
+
